@@ -1,4 +1,4 @@
-# portfolio
+# Portfolio
 
 Personal portfolio website hosted on github
 
