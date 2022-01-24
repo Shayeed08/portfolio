@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Portfolio - Sk Shayeed</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!--Google fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;1,600&display=swap" rel="stylesheet">
+
+        <!--Font awesome link-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!--Our css stylesheet link-->
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body>
+        <!--Header area with navbar-->
+        <div id="headerAreaFixedWrapper">
+            <div class="wrapper-1024px">
+                <div id="headerArea">
+                    <div id="logoArea">
+                        <a href="#" id="logoLink">Shayeed</a> 
+                    </div>
+                    <div id="navArea">
+                        <ul id="navLinks">
+                            <li class="navLink"><a href="#" id="homeLink" class="activeLink">Home</a></li>
+                            <li class="navLink"><a href="#aboutUsArea" id="aboutUsLink">About</a></li>
+                            <li class="navLink"><a href="#skillsArea" id="skillsLink">Skills</a></li>
+                            <li class="navLink"><a href="#servicesArea" id="servicesLink">Services</a></li>
+                            <li class="navLink"><a href="#portfolioArea" id="portfolioLink">Portfolio</a></li>
+                            <li class="navLink"><a href="#contactUsArea" id="contactMeLink">Contact Me</a></li>
+                        </ul>
+                    </div>
+                    <button type="button" id="mobileMenuBtn"><i class="fa fa-bars"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <!--Mobile navigation area-->
+        <div id="mobileMenuAreaFixedWrapper">
+            <div class="wrapper-1024px">
+                <div id="mobileMenuArea">
+                    <ul id="mobileNavLinks">
+                        <li class="mobileNavLink"><a href="#" id="homeLinkMobile" class="activeLink">Home</a></li>
+                        <li class="mobileNavLink"><a href="#aboutUsArea" id="aboutUsLinkMobile">About</a></li>
+                        <li class="mobileNavLink"><a href="#skillsArea" id="skillsLinkMobile">Skills</a></li>
+                        <li class="mobileNavLink"><a href="#servicesArea" id="servicesLinkMobile">Services</a></li>
+                        <li class="mobileNavLink"><a href="#portfolioArea" id="portfolioLinkMobile">Portfolio</a></li>
+                        <li class="mobileNavLink"><a href="#contactUsArea" id="contactMeLinkMobile">Contact Me</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!--Home area with banner-->
+        <div class="wrapper-1024px">
+            <div id="homeArea" class="section">
+                <div id="homeTextArea">
+                    <div id="homeText1">Hi, I'am <span id="homeName">Shayeed</span></div>
+                    <div id="homeText2">Web Developer</div>
+                    <a href="#contactUsArea" id="contactMeLinkBtnArea"><button type="button" id="contactMeBtn">Contact</button></a>
+                    <div id="homeSocialLinks">
+                        <a href="https://www.linkedin.com/in/sk-shayeed-437063229" target="_blank" id="homeLinkedinLink"><i class="fa fa-linkedin" id="homeLinkedinLinkLogo"></i></a>
+                        <a href="https://github.com/Shayeed08" target="_blank" id="homeGithubLink"><i class="fa fa-github" id="homeGithubLinkLogo"></i></a>
+                    </div>
+                </div>
+                <div id="homeImgArea">
+                    <img src="img/homeAvatar.jpeg" id="homeImg" alt="Avatar image">
+                </div>
+            </div>
+        </div>
+
+        <!--About us area-->
+        <div class="wrapper-1024px">
+            <div id="aboutUsArea" class="section">
+                <div id="aboutUsHeading">About</div>
+                <div id="aboutUsData">
+                    <div id="aboutUsImgArea">
+                        <img src="img/aboutImg.jpg" id="aboutUsImg" alt="Photo of Sk Shayeed">
+                    </div>
+                    <div id="aboutUsTextArea">
+                        <div id="aboutUsText1">Hi, I'm Shayeed</div>
+                        <div id="aboutUsText2">Web developer, with knowledge of working in web technologies, delivering quality work. I like to code things from scratch, and enjoy bringing ideas to life in the browser.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Skills area-->
+        <div class="wrapper-1024px">
+            <div id="skillsArea" class="section">
+                <div id="skillsHeading">Skills</div>
+                <div id="skillsData">
+                    <div id="skillsTextArea">
+                        <div id="skillsText1">Professional Skills</div>
+                        <div id="skillsText2"><span class="underlineSkillHead">Front end</span> - HTML, CSS, SASS, JavaScript, React, Styled componenets</div>
+                        <div id="skillsText3"><span class="underlineSkillHead">Back end</span> - NodeJS, Express, JavaScript, MongoDB</div>
+                        <div id="skillsText4"><span class="underlineSkillHead">Miscellaneous</span> - Git, GitHub, Firebase, Webpack, Figma, Adobe Photoshop</div>
+                    </div>
+                    <div id="skillsImgArea">
+                        <img src="img/skillsImg.jpg" id="skillsImg" alt="Skills photo">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Services area-->
+        <div class="wrapper-1024px">
+            <div id="servicesArea" class="section">
+                <div id="servicesHeading">Services</div>
+                <div id="servicesData">
+                    <div id="servicesDetailsArea">
+                        <div class="serviceArea">
+                            <div class="serviceImg"><i class="fa fa-desktop" id="desktopIcon"></i></div>
+                            <div class="serviceHeading">Website Development (Small business / Corporate)</div>
+                            <div class="serviceText">Developing fast-loading, responsive, and user-friendly websites that have consistent accessibility across multiple devices and browsers.</div>
+                        </div>
+                        <div class="serviceArea">
+                            <div class="serviceImg"><i class="fa fa-shopping-cart" id="shoppingCartIcon"></i></div>
+                            <div class="serviceHeading">E-commerce Website Development</div>
+                            <div class="serviceText">Are you planning to expand your business by reaching out to your customers online? An eCommerce website would be the best option to enhance your customer base and increase your sales.</div>
+                        </div>
+                        <div class="serviceArea">
+                            <div class="serviceImg"><i class="fa fa-mobile" id="mobileIcon"></i></div>
+                            <div class="serviceHeading">Web Application Development</div>
+                            <div class="serviceText">Building custom web applications for businesses by leveraging cutting-edge technology frameworks, APIs, and databases.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Portfolio area-->
+        <div class="wrapper-1024px">
+            <div id="portfolioArea" class="section">
+                <div id="portfolioHeading">Portfolio</div>
+                <div id="portfolioData">
+                    <div id="portfolioDetailsArea">
+                        <div class="portfolioItem">
+                            <div class="portfolioImg"><img src="img/foodzapRestaurant.jpg" id="portfolioImg1" alt="portfolioImg1"></div>
+                            <div class="portfolioHeading">Foodzap Restaurant</div>
+                            <div class="portfolioText">Mobile responsive brochure website for a restaurant</div>
+                            <a href="https://shayeed08.github.io/Foodzap-restaurant/" target="_blank" class="portfolioLink"><button type="button" class="portfolioLinkBtn">Visit website</button></a>
+                        </div>
+                        <div class="portfolioItem">
+                            <div class="portfolioImg"><img src="img/weatherApp.jpg" id="portfolioImg2" alt="portfolioImg2"></div>
+                            <div class="portfolioHeading">Weather App</div>
+                            <div class="portfolioText">Weather forecast website built using the OpenWeatherMap API</div>
+                            <a href="https://shayeed08.github.io/Weather-app/" target="_blank" class="portfolioLink"><button type="button" class="portfolioLinkBtn">Visit website</button></a>
+                        </div>
+                        <div class="portfolioItem">
+                            <div class="portfolioImg"><img src="img/ticTacToeGame.jpg" id="portfolioImg3" alt="portfolioImg1"></div>
+                            <div class="portfolioHeading">Tic-Tac-Toe Game</div>
+                            <div class="portfolioText">Tic Tac Toe game which we can play in our browser</div>
+                            <a href="https://shayeed08.github.io/Tic-Tac-Toe-game/" target="_blank" class="portfolioLink"><button type="button" class="portfolioLinkBtn">Visit website</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Contact us area-->
+        <div class="wrapper-1024px">
+            <div id="contactUsArea" class="section">
+                <div id="contactHeading">Contact</div>
+                <div id="contactData">
+                    <div id="contactUsDetailsArea">
+                        <div id="contactUsMobileArea">
+                            <div id="contactUsMobileAreaLogo">
+                                <i class="fa fa-phone contactLogo"></i>
+                            </div>
+                            <div id="contactUsMobileAreaDetails">
+                                <div id="contactUsMobile1">Call Me</div>
+                                <div id="contactUsMobile2">8240989047</div>
+                            </div>
+                        </div>
+                        <div id="contactUsEmailArea">
+                            <div id="contactUsEmailAreaLogo">
+                                <i class="fa fa-envelope contactLogo"></i>
+                            </div>
+                            <div id="contactUsEmailAreaDetails">
+                                <div id="contactUsEmail1">E-Mail</div>
+                                <div id="contactUsEmail2">skshayeed08@gmail.com</div>
+                            </div>
+                        </div>
+                        <div id="contactUsLocationArea">
+                            <div id="contactUsLocationAreaLogo">
+                                <i class="fa fa-map-marker contactLogo"></i>
+                            </div>
+                            <div id="contactUsLocationAreaDetails">
+                                <div id="contactUsLocation1">Location</div>
+                                <div id="contactUsLocation2">30/1B/H/10, Ekbalpore Lane, Kolkata-700023</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="contactUsFormArea">
+                        <!--Form data is sent to google sheets-->
+                        <form action="https://script.google.com/macros/s/AKfycbwUi7VLimy86-uo2tAjTvlQnuTXqhG9n8Yw3Fm5PUrv_Sk-mkbSSxBvtNfFT6zSRMERaA/exec" method="post" id="contactUsForm">
+                            <input type="text" id="name" name="user_name" placeholder="Name" required>
+                            <input type="email" id="mail" name="user_email" placeholder="Email Id" required>
+                            <input type="text" id="mobileNumber" name="user_mobile" placeholder="Mobile No" required>
+                            <textarea id="msg" name="user_message" placeholder="Message" required></textarea>
+                            <button type="submit" id="submitBtn">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Footer area-->
+        <div id="footerOverallArea">
+            <div class="wrapper-1024px">
+                <div id="footerArea" class="section">
+                    <div id="footerDetails">
+                        <div id="footerName">Shayeed</div>
+                        <div id="footerlLinksArea">
+                            <a href="https://www.linkedin.com/in/sk-shayeed-437063229" target="_blank" id="footerLinkedinLink"><i class="fa fa-linkedin" id="footerLinkedinLinkLogo"></i></a>
+                            <a href="https://github.com/Shayeed08" target="_blank" id="footerGithubLink"><i class="fa fa-github" id="footerGithubLinkLogo"></i></a>
+                        </div>
+                    </div>
+                    <div id="footerCopyright">&copy; 2022 Sk Shayeed. All rights reserved.</div>
+                </div>
+            </div>
+        </div>
+
+        <!--ScrollReveal is a JavaScript library for easily animating elements as they enter/leave the viewport.-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--Our javascirpt file-->
+        <script src="js/script.js"></script>
+    </body>
+</html>

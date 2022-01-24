@@ -1,0 +1,993 @@
+/* Overall CSS rules ---------------------- */
+html {
+  scroll-behavior: smooth !important; /*Smooth scrolling to parts of the webpage*/
+}
+
+body {
+  margin: 0;
+}
+
+.wrapper-1024px {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+/*Header CSS rules -------------------------*/
+#headerAreaFixedWrapper {
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  left: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 99;
+  box-shadow: 0 1px 4px rgb(146 161 176 / 15%);
+}
+
+#headerArea {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 72px;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+#logoLink {
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: #0d1730;
+  text-decoration: none;
+}
+
+#navArea {
+  min-width: 60%;
+}
+
+#navArea ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#navArea ul li {
+  display: inline;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+#navArea ul li a {
+  text-decoration: none;
+  color: #0d1730;
+  padding: 5px 0;
+}
+
+#navArea ul li a:hover {
+  border-bottom: 2px solid #3e6ff4;
+}
+
+#navArea ul li a.activeLink {
+  border-bottom: 2px solid #3e6ff4;
+}
+
+#mobileMenuBtn {
+  display: none;
+  border: none;
+  background-color: white;
+}
+
+.fa-bars {
+  font-size: 20px;
+  color: #0d1730;
+}
+
+#mobileMenuAreaFixedWrapper {
+  position: absolute;
+  top: -1000px;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  background-color: white;
+  box-shadow: 0 4px 4px rgb(0 0 0 / 10%);
+  border-radius: 0 0 16px 16px;
+  /*Transitions for mobile menu animations*/
+  transition-property: all;
+  transition-duration: 0.6s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+}
+
+#mobileNavLinks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-left: 0;
+}
+
+#mobileNavLinks li {
+  display: inline;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+#mobileNavLinks li a {
+  text-decoration: none;
+  color: #0d1730;
+  padding-bottom: 10px;
+}
+
+#mobileNavLinks li a:hover {
+  border-bottom: 2px solid #3e6ff4;
+}
+
+#mobileNavLinks li a.activeLink {
+  border-bottom: 2px solid #3e6ff4;
+}
+
+/*Home area CSS rules----------------------*/
+#homeArea {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 160px 0 32px 0;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+#homeTextArea {
+  width: 60%;
+  padding: 20px 0;
+}
+
+#homeText1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 56px;
+  color: #0d1730;
+  font-weight: 600;
+  line-height: 1.6;
+}
+
+#homeName {
+  color: #3e6ff4;
+}
+
+#homeText2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 36px;
+  color: #0d1730;
+  font-weight: 600;
+  line-height: 1.6;
+  margin-bottom: 32px;
+}
+
+#contactMeBtn {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.6;
+  color: #fff;
+  background-color: #3e6ff4;
+  padding: 12px 36px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 40px;
+}
+
+#contectMeBtn:hover {
+  box-shadow: 0px 10px 36px rgb(0 0 0 / 15%);
+}
+
+#homeLinkedinLinkLogo,
+#homeGithubLinkLogo {
+  font-size: 24px;
+  margin-right: 24px;
+  color: black;
+}
+
+#homeLinkedinLinkLogo:hover,
+#homeGithubLinkLogo:hover {
+  color: #3e6ff4;
+}
+
+#homeImgArea {
+  width: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#homeImg {
+  width: 100%;
+}
+
+/*About us area css rules--------------------------*/
+#aboutUsArea {
+  padding: 64px 0 48px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+#aboutUsHeading {
+  font-family: 'Poppins', sans-serif;
+  font-size: 32px;
+  color: #3e6ff4;
+  font-weight: 700;
+  margin: 16px 0 48px 0;
+  text-align: center;
+  border-bottom: 3px solid #3e6ff4;
+}
+
+#aboutUsData {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#aboutUsImgArea {
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#aboutUsTextArea {
+  width: 45%;
+  padding: 4% 0;
+}
+
+#aboutUsImg {
+  width: 60%;
+  border-radius: 50%;
+}
+
+#aboutUsText1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 36px;
+  color: #0d1730;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+#aboutUsText2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  color: #0d1730;
+  font-weight: 300;
+  margin-bottom: 24px;
+}
+
+/*Skills area CSS rules----------------------*/
+#skillsArea {
+  padding: 64px 0 48px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+#skillsHeading {
+  font-family: 'Poppins', sans-serif;
+  font-size: 32px;
+  color: #3e6ff4;
+  font-weight: 700;
+  margin: 16px 0 48px 0;
+  text-align: center;
+  border-bottom: 3px solid #3e6ff4;
+}
+
+#skillsData {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#skillsTextArea {
+  width: 45%;
+}
+
+#skillsImgArea {
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#skillsText1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 36px;
+  color: #0d1730;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+#skillsText2,
+#skillsText3,
+#skillsText4 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  color: #0d1730;
+  font-weight: 300;
+  margin-bottom: 24px;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(3, 74, 40, 0.15);
+}
+
+.underlineSkillHead {
+  text-decoration: underline;
+}
+
+#skillsImg {
+  width: 90%;
+  border-radius: 10px;
+}
+
+/*Services area css rules-----------------*/
+#servicesArea {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 64px 0 48px 0;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+#servicesHeading {
+  font-family: 'Poppins', sans-serif;
+  font-size: 32px;
+  color: #3e6ff4;
+  font-weight: 700;
+  margin: 16px 0 48px 0;
+  text-align: center;
+  border-bottom: 3px solid #3e6ff4;
+}
+
+#servicesData {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#servicesDetailsArea {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.serviceArea {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+#desktopIcon,
+#shoppingCartIcon,
+#mobileIcon {
+  font-size: 48px;
+  margin-bottom: 24px;
+  color: #3e6ff4;
+}
+
+.serviceHeading {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  color: #0d1730;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+.serviceText {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  color: #0d1730;
+  font-weight: 300;
+  margin-bottom: 24px;
+  text-align: left;
+}
+
+/*Portfolio area css rules-----------------*/
+#portfolioArea {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 64px 0 48px 0;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+#portfolioHeading {
+  font-family: 'Poppins', sans-serif;
+  font-size: 32px;
+  color: #3e6ff4;
+  font-weight: 700;
+  margin: 16px 0 48px 0;
+  text-align: center;
+  border-bottom: 3px solid #3e6ff4;
+}
+
+#portfolioData {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#portfolioDetailsArea {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.portfolioItem {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.portfolioImg {
+  width: 100%;
+  padding-bottom: 16px;
+}
+
+#portfolioImg1,
+#portfolioImg2,
+#portfolioImg3 {
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+
+.portfolioHeading {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  color: #0d1730;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+.portfolioText {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  color: #0d1730;
+  font-weight: 300;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.portfolioLinkBtn {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.6;
+  color: #fff;
+  background-color: #3e6ff4;
+  padding: 8px 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.portfolioLinkBtn:hover {
+  box-shadow: 0px 10px 36px rgb(0 0 0 / 15%);
+}
+
+/*Contact us area css rules-----------------------*/
+#contactUsArea {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 64px 0 48px 0;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+#contactHeading {
+  font-family: 'Poppins', sans-serif;
+  font-size: 32px;
+  color: #3e6ff4;
+  font-weight: 700;
+  margin: 16px 0 48px 0;
+  text-align: center;
+  border-bottom: 3px solid #3e6ff4;
+}
+
+#contactData {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+#contactUsDetailsArea {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+}
+
+#contactUsMobileArea,
+#contactUsEmailArea,
+#contactUsLocationArea {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+#contactUsMobileAreaLogo,
+#contactUsEmailAreaLogo,
+#contactUsLocationAreaLogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.contactLogo {
+  font-size: 24px;
+  color: #3e6ff4;
+}
+
+#contactUsMobileAreaDetails,
+#contactUsEmailAreaDetails,
+#contactUsLocationAreaDetails {
+  display: flex;
+  flex-direction: column;
+}
+
+#contactUsMobile1,
+#contactUsEmail1,
+#contactUsLocation1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  color: #0d1730;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+#contactUsMobile2,
+#contactUsEmail2,
+#contactUsLocation2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  color: #0d1730;
+  font-weight: 300;
+}
+
+#contactUsFormArea {
+  width: 45%;
+}
+
+#contactUsForm {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+#name,
+#mail,
+#mobileNumber {
+  padding: 3px 10px;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid #0d1730;
+  outline: none;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  color: #0d1730;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+#msg {
+  padding: 3px 10px;
+  height: 160px;
+  border-radius: 5px;
+  border: 1px solid #0d1730;
+  outline: none;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  color: #0d1730;
+  font-weight: 300;
+  margin-bottom: 20px;
+  resize: none;
+}
+
+#submitBtn {
+  align-self: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.6;
+  color: #fff;
+  background-color: #3e6ff4;
+  padding: 6px 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#submitBtn:hover {
+  box-shadow: 0px 10px 36px rgb(0 0 0 / 15%);
+}
+
+/*Footer area css rules-------------------*/
+#footerOverallArea {
+  background-color: #0d1730;
+}
+
+#footerArea {
+  display: flex;
+  flex-direction: column;
+  margin-top: 64px;
+  margin-left: 1%;
+  margin-right: 1%;
+  padding: 20px 0;
+}
+
+#footerDetails {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#footerName {
+  font-family: 'Poppins', sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+  color: white;
+}
+
+#footerLinkedinLinkLogo,
+#footerGithubLinkLogo {
+  font-size: 20px;
+  color: white;
+}
+
+#footerLinkedinLinkLogo {
+  margin-right: 20px;
+}
+
+#footerCopyright {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  color: white;
+  font-weight: 300;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/*Media queries for less than 860 px-----------------------------*/
+@media only screen and (max-width: 860px) {
+  #navArea {
+    min-width: 70%;
+  }
+}
+
+/*Media queries for less than 786 px------------------------------*/
+@media only screen and (max-width: 768px) {
+  #headerArea {
+    height: 56px;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  #navArea ul {
+    display: none;
+  }
+
+  #mobileMenuBtn {
+    display: block;
+  }
+
+  #homeArea {
+    margin-top: 76px;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  #homeText1 {
+    font-size: 36px;
+  }
+
+  #homeText2 {
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+
+  #aboutUsArea {
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-top: 48px;
+    padding-bottom: 32px;
+  }
+
+  #aboutUsHeading {
+    font-size: 24px;
+  }
+
+  #aboutUsText1 {
+    font-size: 24px;
+  }
+
+  #aboutUsText2 {
+    font-size: 16px;
+    font-weight: 300;
+  }
+
+  #skillsArea {
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-top: 48px;
+    padding-bottom: 32px;
+  }
+
+  #skillsHeading {
+    font-size: 24px;
+  }
+
+  #skillsText1 {
+    font-size: 24px;
+  }
+
+  #skillsText2,
+  #skillsText3,
+  #skillsText4 {
+    font-size: 16px;
+    font-weight: 300;
+  }
+
+  #servicesArea {
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 48px 0 32px 0;
+  }
+
+  #servicesHeading {
+    font-size: 24px;
+  }
+
+  .serviceHeading {
+    font-size: 20px;
+  }
+
+  .serviceText {
+    font-size: 16px;
+    padding: 0 24px;
+    margin-bottom: 0;
+  }
+
+  #portfolioArea {
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 48px 0 32px 0;
+  }
+
+  #portfolioHeading {
+    font-size: 24px;
+  }
+
+  .portfolioHeading {
+    font-size: 20px;
+  }
+
+  .portfolioText {
+    font-size: 16px;
+    padding: 0 24px;
+    margin-bottom: 36px;
+  }
+
+  #contactUsArea {
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 48px 0 32px 0;
+  }
+
+  #contactHeading {
+    font-size: 24px;
+  }
+
+  #footerArea {
+    margin-top: 32px;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  #footerName {
+    font-size: 24px;
+  }
+
+  #footerCopyright {
+    font-size: 13px;
+  }
+}
+
+/*Media queries for less than 600 px-------------------------------*/
+@media only screen and (max-width: 600px) {
+  #homeArea {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 56px 0 10px 0;
+  }
+
+  #homeTextArea {
+    width: 80%;
+    margin: 0 10%;
+    text-align: center;
+  }
+
+  #contactMeBtn {
+    margin-bottom: 16px;
+  }
+
+  #homeSocialLinks {
+    text-align: center;
+  }
+
+  #homeLinkedinLinkLogo,
+  #homeGithubLinkLogo {
+    margin: 0 10px;
+    font-size: 18px;
+  }
+
+  #homeImgArea {
+    width: 70%;
+    max-width: 300px;
+    margin: 0 15%;
+  }
+
+  #aboutUsData {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #aboutUsImgArea {
+    width: 70%;
+    max-width: 300px;
+    margin: 0 1%;
+  }
+
+  #aboutUsImg {
+    width: 100%;
+    max-width: 300px;
+    margin: 0;
+  }
+
+  #aboutUsTextArea {
+    text-align: center;
+    width: 90%;
+    margin: 0 1%;
+  }
+
+  #skillsData {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #skillsImgArea {
+    width: 90%;
+    max-width: 300px;
+    margin: 0 1%;
+  }
+
+  #skillsImg {
+    width: 100%;
+    margin: 0;
+  }
+
+  #skillsTextArea {
+    width: 90%;
+    margin: 0 1%;
+  }
+
+  #skillsText1 {
+    text-align: center;
+  }
+
+  #servicesArea {
+    padding-bottom: 0;
+  }
+
+  #servicesDetailsArea {
+    flex-direction: column;
+  }
+
+  .serviceArea {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  #portfolioArea {
+    padding-bottom: 0;
+  }
+
+  #portfolioDetailsArea {
+    flex-direction: column;
+  }
+
+  .portfolioItem {
+    width: 100%;
+    margin-bottom: 60px;
+  }
+
+  .portfolioImg {
+    width: 90%;
+    max-width: 300px;
+  }
+
+  .portfolioText {
+    margin-bottom: 16px;
+  }
+
+  #contactHeading {
+    margin-bottom: 32px;
+  }
+
+  #contactData {
+    flex-direction: column;
+  }
+
+  #contactUsDetailsArea {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  #contactUsMobileAreaLogo,
+  #contactUsEmailAreaLogo,
+  #contactUsLocationAreaLogo {
+    display: none;
+  }
+
+  #contactUsTextArea,
+  #contactUsBtnArea {
+    width: 90%;
+    text-align: center;
+  }
+
+  #contactUsFormArea {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  #footerArea {
+    padding: 10px;
+  }
+
+  #footerDetails {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  #footerName {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+}
